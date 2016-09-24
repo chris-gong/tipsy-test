@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background = "@drawable/game45background"
+    android:descendantFocusability = "beforeDescendants"
+    android:focusableInTouchMode = "true">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="105sp" />
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:background="@drawable/edittextbackground"
+        android:ems="7"
+        android:hint=" Answer here"
+        android:textColorHint="#5B5B5B"
+        android:textSize="25sp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/correctOrNotOrTimesUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+</RelativeLayout>
