@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GOTHIC.TTF">
+            <string>CenturyGothic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="csg.png" translatesAutoresizingMaskIntoConstraints="NO" id="R1D-15-kZi">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Chris Gong. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx8-vV-L1K">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Pji-NV-eeK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Pji-NV-eeK"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Pji-NV-eeK"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R1D-15-kZi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="71C-Nf-LAe"/>
+                <constraint firstItem="cx8-vV-L1K" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="Ebl-gw-8Mw"/>
+                <constraint firstItem="R1D-15-kZi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HfE-W9-5qN"/>
+                <constraint firstItem="cx8-vV-L1K" firstAttribute="leading" secondItem="R1D-15-kZi" secondAttribute="leading" id="YSN-pI-w1H"/>
+                <constraint firstItem="cx8-vV-L1K" firstAttribute="trailing" secondItem="R1D-15-kZi" secondAttribute="trailing" id="dGo-f2-JWG"/>
+                <constraint firstAttribute="trailing" secondItem="R1D-15-kZi" secondAttribute="trailing" id="hpt-Y3-bfI"/>
+                <constraint firstAttribute="bottom" secondItem="R1D-15-kZi" secondAttribute="bottom" id="xr6-kz-vz2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="R1D-15-kZi"/>
+                    <exclude reference="cx8-vV-L1K"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="71C-Nf-LAe"/>
+                    <exclude reference="HfE-W9-5qN"/>
+                    <exclude reference="hpt-Y3-bfI"/>
+                    <exclude reference="xr6-kz-vz2"/>
+                    <exclude reference="Ebl-gw-8Mw"/>
+                    <exclude reference="YSN-pI-w1H"/>
+                    <exclude reference="dGo-f2-JWG"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="R1D-15-kZi"/>
+                    <include reference="cx8-vV-L1K"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="71C-Nf-LAe"/>
+                    <include reference="HfE-W9-5qN"/>
+                    <include reference="hpt-Y3-bfI"/>
+                    <include reference="xr6-kz-vz2"/>
+                    <include reference="Ebl-gw-8Mw"/>
+                    <include reference="YSN-pI-w1H"/>
+                    <include reference="dGo-f2-JWG"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="csg.png" width="370" height="527"/>
+    </resources>
+</document>

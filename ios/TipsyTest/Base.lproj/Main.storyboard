@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="HomepageViewController" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tipsytesthome.png" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-xu-Ezs">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rHz-xu-Ezs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="7JY-OO-s3p"/>
+                            <constraint firstItem="rHz-xu-Ezs" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="RPZ-Vy-1UN"/>
+                            <constraint firstAttribute="trailing" secondItem="rHz-xu-Ezs" secondAttribute="trailing" id="aIL-9E-jRq">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="rHz-xu-Ezs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="t2I-ED-f6k">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rHz-xu-Ezs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7JY-OO-s3p"/>
+                                <exclude reference="RPZ-Vy-1UN"/>
+                                <exclude reference="aIL-9E-jRq"/>
+                                <exclude reference="t2I-ED-f6k"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rHz-xu-Ezs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7JY-OO-s3p"/>
+                                <include reference="RPZ-Vy-1UN"/>
+                                <include reference="aIL-9E-jRq"/>
+                                <include reference="t2I-ED-f6k"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rHz-xu-Ezs" id="IJE-zx-Lxt"/>
+                        <segue destination="HlR-Cn-Ijs" kind="presentation" identifier="gameOneSegue" id="D2Q-X5-kTF"/>
+                        <segue destination="Ftd-Vm-nfT" kind="presentation" identifier="faqSegue" id="1a4-Fq-mJp"/>
+                        <segue destination="RZA-vj-nNI" kind="presentation" identifier="contactSegue" id="3rf-YS-5pP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="340"/>
+        </scene>
+        <!--Game One-->
+        <scene sceneID="fQN-0J-9Nb">
+            <objects>
+                <viewController storyboardIdentifier="GameOneViewController" id="HlR-Cn-Ijs" customClass="GameOne" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kTL-yK-Q4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="WsS-0Y-DE0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pRn-02-4AK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game1.png" translatesAutoresizingMaskIntoConstraints="NO" id="FjH-OV-ujv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FjH-OV-ujv" firstAttribute="leading" secondItem="pRn-02-4AK" secondAttribute="leading" id="XJp-Kd-nkU"/>
+                            <constraint firstAttribute="trailing" secondItem="FjH-OV-ujv" secondAttribute="trailing" id="hAL-dT-QR0"/>
+                            <constraint firstItem="FjH-OV-ujv" firstAttribute="top" secondItem="pRn-02-4AK" secondAttribute="top" id="pU1-Mw-pcS"/>
+                            <constraint firstItem="FjH-OV-ujv" firstAttribute="bottom" secondItem="WsS-0Y-DE0" secondAttribute="top" id="wMf-Mw-NeD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FjH-OV-ujv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XJp-Kd-nkU"/>
+                                <exclude reference="hAL-dT-QR0"/>
+                                <exclude reference="pU1-Mw-pcS"/>
+                                <exclude reference="wMf-Mw-NeD"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FjH-OV-ujv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XJp-Kd-nkU"/>
+                                <include reference="hAL-dT-QR0"/>
+                                <include reference="pU1-Mw-pcS"/>
+                                <include reference="wMf-Mw-NeD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FjH-OV-ujv" id="Wam-mQ-Z2k"/>
+                        <segue destination="KD9-sw-fRC" kind="presentation" identifier="gameTwoSegue" id="ZWm-fT-a3g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LwE-Oc-wXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="340"/>
+        </scene>
+        <!--Game Two-->
+        <scene sceneID="iwY-hV-5Zy">
+            <objects>
+                <viewController storyboardIdentifier="gameTwoViewController" id="KD9-sw-fRC" customClass="GameTwo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m1F-0u-agP"/>
+                        <viewControllerLayoutGuide type="bottom" id="dcX-zG-K1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AYA-kS-0BK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game2.png" translatesAutoresizingMaskIntoConstraints="NO" id="LPV-Zp-THA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LPV-Zp-THA" firstAttribute="leading" secondItem="AYA-kS-0BK" secondAttribute="leading" id="3lj-NO-haZ"/>
+                            <constraint firstItem="LPV-Zp-THA" firstAttribute="top" secondItem="AYA-kS-0BK" secondAttribute="top" id="5pV-uq-STq"/>
+                            <constraint firstAttribute="trailing" secondItem="LPV-Zp-THA" secondAttribute="trailing" id="Yc3-W4-Sq6"/>
+                            <constraint firstItem="LPV-Zp-THA" firstAttribute="bottom" secondItem="dcX-zG-K1s" secondAttribute="top" id="b4J-sc-t9h"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LPV-Zp-THA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3lj-NO-haZ"/>
+                                <exclude reference="5pV-uq-STq"/>
+                                <exclude reference="Yc3-W4-Sq6"/>
+                                <exclude reference="b4J-sc-t9h"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LPV-Zp-THA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3lj-NO-haZ"/>
+                                <include reference="5pV-uq-STq"/>
+                                <include reference="Yc3-W4-Sq6"/>
+                                <include reference="b4J-sc-t9h"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LPV-Zp-THA" id="INd-Ro-5Z1"/>
+                        <segue destination="mYS-F3-CzE" kind="presentation" identifier="gameThreeSegue" id="5Hh-6q-uQG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r39-ip-7En" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.5" y="-315"/>
+        </scene>
+        <!--Game Three-->
+        <scene sceneID="JbP-0C-2MM">
+            <objects>
+                <viewController storyboardIdentifier="gameThreeViewController" id="mYS-F3-CzE" customClass="GameThree" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g6p-VJ-DLF"/>
+                        <viewControllerLayoutGuide type="bottom" id="zmD-wW-umS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tOV-Aw-hBu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game3.png" translatesAutoresizingMaskIntoConstraints="NO" id="hEN-mI-RKU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hEN-mI-RKU" firstAttribute="leading" secondItem="tOV-Aw-hBu" secondAttribute="leading" id="UZI-Uo-cfJ"/>
+                            <constraint firstAttribute="trailing" secondItem="hEN-mI-RKU" secondAttribute="trailing" id="VZf-MI-XOD"/>
+                            <constraint firstItem="hEN-mI-RKU" firstAttribute="bottom" secondItem="zmD-wW-umS" secondAttribute="top" id="scY-j4-J44"/>
+                            <constraint firstItem="hEN-mI-RKU" firstAttribute="top" secondItem="tOV-Aw-hBu" secondAttribute="top" id="uVM-2D-eYb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hEN-mI-RKU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="UZI-Uo-cfJ"/>
+                                <exclude reference="VZf-MI-XOD"/>
+                                <exclude reference="scY-j4-J44"/>
+                                <exclude reference="uVM-2D-eYb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hEN-mI-RKU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="UZI-Uo-cfJ"/>
+                                <include reference="VZf-MI-XOD"/>
+                                <include reference="scY-j4-J44"/>
+                                <include reference="uVM-2D-eYb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hEN-mI-RKU" id="Go6-RA-LpZ"/>
+                        <segue destination="pE8-eV-cbO" kind="presentation" identifier="questionOneSegue" id="H0P-SY-sLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWZ-5M-evo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="340"/>
+        </scene>
+        <!--Question One-->
+        <scene sceneID="QWu-mF-sNs">
+            <objects>
+                <viewController storyboardIdentifier="questionOneViewController" id="pE8-eV-cbO" customClass="QuestionOne" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gds-p6-meG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gyh-Ma-NOg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UGu-aq-Zg6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game45background.png" translatesAutoresizingMaskIntoConstraints="NO" id="DMd-wO-coa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DMd-wO-coa" firstAttribute="leading" secondItem="UGu-aq-Zg6" secondAttribute="leading" id="42c-UI-gUL"/>
+                            <constraint firstItem="DMd-wO-coa" firstAttribute="top" secondItem="UGu-aq-Zg6" secondAttribute="top" id="CSc-6d-jr8"/>
+                            <constraint firstItem="DMd-wO-coa" firstAttribute="bottom" secondItem="Gyh-Ma-NOg" secondAttribute="top" id="gip-g8-1XN"/>
+                            <constraint firstAttribute="trailing" secondItem="DMd-wO-coa" secondAttribute="trailing" id="xzE-PJ-xjr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DMd-wO-coa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="42c-UI-gUL"/>
+                                <exclude reference="CSc-6d-jr8"/>
+                                <exclude reference="gip-g8-1XN"/>
+                                <exclude reference="xzE-PJ-xjr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DMd-wO-coa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="42c-UI-gUL"/>
+                                <include reference="CSc-6d-jr8"/>
+                                <include reference="gip-g8-1XN"/>
+                                <include reference="xzE-PJ-xjr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="DMd-wO-coa" id="kNh-2F-twz"/>
+                        <segue destination="Y7S-DO-GlC" kind="presentation" identifier="questionTwoSegue" id="dzL-0Q-ONW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ZJ-5w-AeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3145.5" y="333"/>
+        </scene>
+        <!--Question Two-->
+        <scene sceneID="bUM-mw-BLU">
+            <objects>
+                <viewController storyboardIdentifier="questionTwoViewController" id="Y7S-DO-GlC" customClass="QuestionTwo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6OX-4a-Jyv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hbv-78-Qcb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FjT-4o-1vn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game45background.png" translatesAutoresizingMaskIntoConstraints="NO" id="k1S-sQ-YMe">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k1S-sQ-YMe" firstAttribute="leading" secondItem="FjT-4o-1vn" secondAttribute="leading" id="2eA-Uq-e4c"/>
+                            <constraint firstItem="k1S-sQ-YMe" firstAttribute="top" secondItem="FjT-4o-1vn" secondAttribute="top" id="UmP-8R-svK"/>
+                            <constraint firstAttribute="trailing" secondItem="k1S-sQ-YMe" secondAttribute="trailing" id="mKJ-82-TFe"/>
+                            <constraint firstItem="k1S-sQ-YMe" firstAttribute="bottom" secondItem="Hbv-78-Qcb" secondAttribute="top" id="zTh-9x-B3K"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="k1S-sQ-YMe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2eA-Uq-e4c"/>
+                                <exclude reference="UmP-8R-svK"/>
+                                <exclude reference="mKJ-82-TFe"/>
+                                <exclude reference="zTh-9x-B3K"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="k1S-sQ-YMe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2eA-Uq-e4c"/>
+                                <include reference="UmP-8R-svK"/>
+                                <include reference="mKJ-82-TFe"/>
+                                <include reference="zTh-9x-B3K"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="k1S-sQ-YMe" id="yrk-Yl-77e"/>
+                        <segue destination="Bas-B7-6H0" kind="presentation" identifier="questionThreeSegue" id="32N-3R-vDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUP-k6-lBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3829.5" y="333"/>
+        </scene>
+        <!--Question Three-->
+        <scene sceneID="NNx-sM-3tX">
+            <objects>
+                <viewController storyboardIdentifier="questionThreeViewController" id="Bas-B7-6H0" customClass="QuestionThree" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cGV-s9-qHs"/>
+                        <viewControllerLayoutGuide type="bottom" id="KFh-VR-QyE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gh3-t8-AOl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game45background.png" translatesAutoresizingMaskIntoConstraints="NO" id="izb-Ox-okE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="izb-Ox-okE" firstAttribute="top" secondItem="gh3-t8-AOl" secondAttribute="top" id="NPE-Lw-XcU"/>
+                            <constraint firstAttribute="trailing" secondItem="izb-Ox-okE" secondAttribute="trailing" id="NuI-Yq-IL8"/>
+                            <constraint firstItem="izb-Ox-okE" firstAttribute="leading" secondItem="gh3-t8-AOl" secondAttribute="leading" id="NxW-KK-Hd3"/>
+                            <constraint firstItem="izb-Ox-okE" firstAttribute="bottom" secondItem="KFh-VR-QyE" secondAttribute="top" id="ZaV-Tg-SY5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="izb-Ox-okE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NPE-Lw-XcU"/>
+                                <exclude reference="NuI-Yq-IL8"/>
+                                <exclude reference="NxW-KK-Hd3"/>
+                                <exclude reference="ZaV-Tg-SY5"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="izb-Ox-okE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NPE-Lw-XcU"/>
+                                <include reference="NuI-Yq-IL8"/>
+                                <include reference="NxW-KK-Hd3"/>
+                                <include reference="ZaV-Tg-SY5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="izb-Ox-okE" id="CT7-T9-F4o"/>
+                        <segue destination="Jvg-2N-8wc" kind="presentation" identifier="reactionTimesSegue" id="MMf-xF-XYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5m-vr-Fjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4536" y="355"/>
+        </scene>
+        <!--Reaction Times-->
+        <scene sceneID="Htp-Zb-bNC">
+            <objects>
+                <viewController storyboardIdentifier="reactionTimesViewController" id="Jvg-2N-8wc" customClass="ReactionTimes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XLz-zb-XRz"/>
+                        <viewControllerLayoutGuide type="bottom" id="D6F-pN-fPE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ef1-bv-pbH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game45background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-tB-iLP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fe6-tB-iLP" firstAttribute="leading" secondItem="ef1-bv-pbH" secondAttribute="leading" id="903-Cs-Wzh"/>
+                            <constraint firstAttribute="trailing" secondItem="Fe6-tB-iLP" secondAttribute="trailing" id="A31-4a-qMd"/>
+                            <constraint firstItem="Fe6-tB-iLP" firstAttribute="top" secondItem="ef1-bv-pbH" secondAttribute="top" id="b7H-LJ-Pss"/>
+                            <constraint firstItem="Fe6-tB-iLP" firstAttribute="bottom" secondItem="D6F-pN-fPE" secondAttribute="top" id="lDk-gV-jCl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Fe6-tB-iLP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="903-Cs-Wzh"/>
+                                <exclude reference="A31-4a-qMd"/>
+                                <exclude reference="b7H-LJ-Pss"/>
+                                <exclude reference="lDk-gV-jCl"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Fe6-tB-iLP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="903-Cs-Wzh"/>
+                                <include reference="A31-4a-qMd"/>
+                                <include reference="b7H-LJ-Pss"/>
+                                <include reference="lDk-gV-jCl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Fe6-tB-iLP" id="Lf3-Im-zoR"/>
+                        <segue destination="iZV-uT-2HY" kind="presentation" identifier="finalPageSegue" id="gVE-zi-NoV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhV-bd-6M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.5" y="-352"/>
+        </scene>
+        <!--Final Page-->
+        <scene sceneID="cbt-bC-Mai">
+            <objects>
+                <viewController storyboardIdentifier="FinalSegueViewController" id="iZV-uT-2HY" customClass="FinalPage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pq6-6d-tte"/>
+                        <viewControllerLayoutGuide type="bottom" id="n39-gI-bTt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UMG-UW-mcM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game45background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z1W-Vl-N6T">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z1W-Vl-N6T" secondAttribute="trailing" id="1go-39-JnN"/>
+                            <constraint firstItem="Z1W-Vl-N6T" firstAttribute="leading" secondItem="UMG-UW-mcM" secondAttribute="leading" id="Isd-76-TA8"/>
+                            <constraint firstItem="Z1W-Vl-N6T" firstAttribute="bottom" secondItem="n39-gI-bTt" secondAttribute="top" id="dxl-Qw-CXf"/>
+                            <constraint firstItem="Z1W-Vl-N6T" firstAttribute="top" secondItem="UMG-UW-mcM" secondAttribute="top" id="rs0-YE-Laj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Z1W-Vl-N6T"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1go-39-JnN"/>
+                                <exclude reference="Isd-76-TA8"/>
+                                <exclude reference="dxl-Qw-CXf"/>
+                                <exclude reference="rs0-YE-Laj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Z1W-Vl-N6T"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1go-39-JnN"/>
+                                <include reference="Isd-76-TA8"/>
+                                <include reference="dxl-Qw-CXf"/>
+                                <include reference="rs0-YE-Laj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Z1W-Vl-N6T" id="IBo-3C-b6k"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="backToHomeSegue" id="JZ5-ec-dYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKx-DQ-SD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328.5" y="340"/>
+        </scene>
+        <!--Faq Page-->
+        <scene sceneID="21p-2q-YIH">
+            <objects>
+                <viewController storyboardIdentifier="faqViewController" id="Ftd-Vm-nfT" customClass="FaqPage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IXZ-qT-zhj"/>
+                        <viewControllerLayoutGuide type="bottom" id="pJB-6u-bvp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7mH-uM-ErH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faqs.png" translatesAutoresizingMaskIntoConstraints="NO" id="hqH-Fw-gUV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hqH-Fw-gUV" firstAttribute="leading" secondItem="7mH-uM-ErH" secondAttribute="leading" id="4y9-Rs-u9s"/>
+                            <constraint firstItem="hqH-Fw-gUV" firstAttribute="bottom" secondItem="pJB-6u-bvp" secondAttribute="top" id="Muc-QV-BG5"/>
+                            <constraint firstItem="hqH-Fw-gUV" firstAttribute="top" secondItem="7mH-uM-ErH" secondAttribute="top" id="eIY-3V-4O0"/>
+                            <constraint firstAttribute="trailing" secondItem="hqH-Fw-gUV" secondAttribute="trailing" id="yAJ-Y0-U5x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hqH-Fw-gUV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4y9-Rs-u9s"/>
+                                <exclude reference="Muc-QV-BG5"/>
+                                <exclude reference="eIY-3V-4O0"/>
+                                <exclude reference="yAJ-Y0-U5x"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hqH-Fw-gUV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4y9-Rs-u9s"/>
+                                <include reference="Muc-QV-BG5"/>
+                                <include reference="eIY-3V-4O0"/>
+                                <include reference="yAJ-Y0-U5x"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hqH-Fw-gUV" id="Ois-OY-GR6"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="faqToHomeSegue" id="853-pd-2gf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSB-o3-juW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="1062"/>
+        </scene>
+        <!--Contact Page-->
+        <scene sceneID="BK5-BY-fMs">
+            <objects>
+                <viewController storyboardIdentifier="contactViewController" id="RZA-vj-nNI" customClass="ContactPage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8jk-vG-o9v"/>
+                        <viewControllerLayoutGuide type="bottom" id="gjx-wi-Q7S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hcA-0Q-DuI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pop-hb-gjG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pop-hb-gjG" secondAttribute="trailing" id="Em9-RR-sP6"/>
+                            <constraint firstItem="Pop-hb-gjG" firstAttribute="top" secondItem="hcA-0Q-DuI" secondAttribute="top" id="Haz-io-keR"/>
+                            <constraint firstItem="Pop-hb-gjG" firstAttribute="bottom" secondItem="gjx-wi-Q7S" secondAttribute="top" id="S0I-Zg-0cy"/>
+                            <constraint firstItem="Pop-hb-gjG" firstAttribute="leading" secondItem="hcA-0Q-DuI" secondAttribute="leading" id="Vqz-7G-ZWW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Pop-hb-gjG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Em9-RR-sP6"/>
+                                <exclude reference="Haz-io-keR"/>
+                                <exclude reference="S0I-Zg-0cy"/>
+                                <exclude reference="Vqz-7G-ZWW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Pop-hb-gjG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Em9-RR-sP6"/>
+                                <include reference="Haz-io-keR"/>
+                                <include reference="S0I-Zg-0cy"/>
+                                <include reference="Vqz-7G-ZWW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Pop-hb-gjG" id="kBy-G2-gMF"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="contactToHomeSegue" id="4qf-28-Wux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqg-Mf-hSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225.5" y="1062"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="contactus.png" width="620" height="820"/>
+        <image name="faqs.png" width="620" height="820"/>
+        <image name="game1.png" width="620" height="820"/>
+        <image name="game2.png" width="620" height="820"/>
+        <image name="game3.png" width="620" height="820"/>
+        <image name="game45background.png" width="620" height="820"/>
+        <image name="tipsytesthome.png" width="615" height="820"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JZ5-ec-dYP"/>
+    </inferredMetricsTieBreakers>
+</document>
